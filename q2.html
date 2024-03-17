@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   #bar-graph{
+    background-color: lightgrey;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    top: 20%;
+    left: 40%;
+    position: absolute;
+   }
+   .bar-with-text{
+    display: inline-block;
+    text-align: center;
+   }
+   .bar{
+    background-color: darkgrey;
+    height: 300px;
+    width: 30px;
+    display: inline-block;
+    margin: 15px;
+   }
+   #bar1{
+    background-color: darkgrey;
+   }
+   #bar2{
+    background-color: darkgrey;
+   }
+   #bar3{
+    background-color: darkgrey;
+   }
+   .animatedbar-1{
+    background-color: #fff;
+    height: 100%;
+   }
+   @keyframes animatedbar-1 {
+
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 70%;
+    }
+   }
+   .animated-bar{
+    background-color: #fff;
+    height: 100%;
+   }
+   #animatedbar-1{
+    animation: tran1 3s forwards;
+   }
+   @keyframes tran1 {
+
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 70%;
+    }
+   }
+   #animatedbar-2{
+    animation: tran2 3s forwards ;
+   }
+   @keyframes tran2 {
+
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 60%;
+    }
+   }
+   #animatedbar-3{
+    animation: tran3 3s forwards;
+   }
+   @keyframes tran3 {
+
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 20%;
+    }
+   }
+    </style>
+</head>
+<body>
+    <div id="bar-graph">
+        <div class="bar-with-text">
+            <div id="bar1" class="bar">
+                <div class="animated-bar" id="animatedbar-1">
+
+                </div>
+            </div>
+            <br>
+            30%
+        </div>
+        <div class="bar-with-text">
+            <div id="bar2" class="bar">
+                <div class="animated-bar" id="animatedbar-2">
+                    
+                </div>
+            </div>
+            <br>
+            40%
+        </div>
+        <div class="bar-with-text">
+            <div id="bar3" class="bar">
+                <div class="animated-bar" id="animatedbar-3">
+                    
+                </div>
+            </div>
+            <br>
+            80%
+        </div>
+        <br>
+        <h1><b>Bar Plot</b></h1>
+    </div>
+</body>
+</html>

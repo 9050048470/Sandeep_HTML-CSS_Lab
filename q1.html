@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+/*  This body tag will be use Best Postion of header 
+        body {
+            padding: 0px 100px;
+        }
+ */
+        nav {
+            background-color: lightgrey;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul a {
+            text-decoration: none;
+        }
+
+        .menu-items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #main-menu {
+            background-color: darkgrey;
+            padding-left: 50px;
+        }
+
+        #main-menu>li {
+            display: inline-block;
+
+        }
+
+        #main-menu>li>a {
+            display: inline-block;
+            padding: 10px;
+            color: #fff;
+
+        }
+
+        #parent-main-menu-items {
+            position: relative;
+
+        }
+
+        #sub-menu {
+            content: '';
+            position: absolute;
+            background-color: lightgrey;
+            padding: 0px 0px 3px 0px;
+            display: none;
+            white-space: nowrap;
+            left: 10px;
+
+        }
+
+        #sub-menu li {
+            margin: 0;
+            padding: 8px;
+            background-color: lightgrey;
+        }
+
+        #sub-menu li a {
+            color: #fff;
+
+        }
+
+        #parent-main-menu-items:hover #sub-menu {
+            display: block;
+
+        }
+
+        nav>ul>li:hover {
+            background-color: black;
+        }
+
+        header h1 {
+            display: block;
+            margin-right: 40px;
+            text-align: right;
+            padding: 10px 0px;
+        }
+
+        header {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Demo of Dropdown</h1>
+    </header>
+    <nav>
+        <ul id="main-menu" class="menu-item">
+            <li><a href="link/">link 1</a></li>
+            <li id="parent-main-menu-items">
+                <a href="#">link 2</a>
+                <ul id="sub-menu" class="menu-item">
+                    <li><a href="">DD_link_1</a></li>
+                    <li><a href="">DD_link_2</a></li>
+                    <li><a href="">DD_link_3</a></li>
+                </ul>
+            </li>
+            <li><a href="">link 3</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

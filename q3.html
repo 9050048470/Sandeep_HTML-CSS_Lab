@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url("bgimage.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: fixed;
+        }
+
+        #gmail-box {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            border: 1px solid white;
+            padding: 0px 30px;
+            background-color: rgba(211, 211, 211, 0.14);
+        }
+
+        input {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: none;
+            background-color: whitesmoke;
+            width: 300px;
+            font-size: 20px;
+            padding: 8px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input:focus {
+            border: none;
+            color: #ffffff;
+            background-color: steelblue;
+            opacity: 0.35;
+        }
+
+        input:focus::placeholder {
+            color: #ffffff;
+        }
+
+        button {
+            margin: 25px;
+            padding: 6px 14px;
+            background-color: rgb(208, 7, 227);
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        h1{
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gmail-box">
+        <h1>Create Gmail Account</h1>
+        <form action="" method="post">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="number" name="mobileno" min="6000000000" max="9999999999" placeholder="Contact Number"required>
+            <input type="email" name="email" placeholder="Enter Email Id"required>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
